@@ -4,7 +4,6 @@ import * as faceapi from 'face-api.js';
 
 const { Canvas, Image, ImageData } = canvas
 faceapi.env.monkeyPatch({ Canvas, Image, ImageData })
-
 import start, {video} from './webcam.js'
 
 export default function index(){
