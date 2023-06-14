@@ -21,7 +21,7 @@ export function expressions(){
       }
         
   
-    },1000)
+    },100)
 
   } catch (e){
     console.error(e)

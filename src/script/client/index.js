@@ -2,7 +2,7 @@ import { player, start } from "./videoPlayer.js"
 import { draw } from "./draw.js"
 import { expressions } from "./expressions.js"
 
-player.addEventListener('playing', expressions)
+player.addEventListener('playing', draw)
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),

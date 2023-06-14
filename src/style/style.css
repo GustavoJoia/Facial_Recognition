@@ -14,7 +14,13 @@ canvas {
 }
 
 video {
-    width: 400px;
-    height: 400px;
+    width: 480px;
+    height: 310px;
     border: 1px solid #000;
+    position: absolute;
+}
+
+h1{
+    position: absolute;
+    top: 5%;
 }

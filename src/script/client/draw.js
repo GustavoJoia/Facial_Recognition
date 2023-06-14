@@ -7,6 +7,7 @@ export function draw(){
     document.body.append(canvas)
     
     const displaySize = {width: player.width, height: player.height}
+    console.log(displaySize, player.width, player.height)
     faceapi.matchDimensions(canvas, displaySize)
   
     setInterval(async () =>{
@@ -31,6 +32,7 @@ export function draw(){
   
         faceapi.draw.drawDetections(canvas, resized)
         faceapi.draw.drawFaceLandmarks(canvas, resized)
+        faceapi.draw.drawFaceExpressions(canvas, resized)
   
     },100)
   
