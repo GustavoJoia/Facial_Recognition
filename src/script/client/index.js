@@ -1,0 +1,12 @@
+import { player, start } from "./videoPlayer.js"
+import { draw } from "./draw.js"
+import { expressions } from "./expressions.js"
+
+player.addEventListener('playing', expressions)
+
+Promise.all([
+  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('/models'),
+]).then(start)
