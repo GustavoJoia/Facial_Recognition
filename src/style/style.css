@@ -9,18 +9,8 @@ body {
     flex-direction: column;
 }
 
-canvas {
-    position: absolute;
-}
-
 video {
     width: 480px;
     height: 310px;
     border: 1px solid #000;
-    position: absolute;
-}
-
-h1{
-    position: absolute;
-    top: 5%;
 }

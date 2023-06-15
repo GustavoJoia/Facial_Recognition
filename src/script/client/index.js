@@ -1,6 +1,5 @@
 import { player, start } from "./videoPlayer.js"
 import { draw } from "./draw.js"
-import { expressions } from "./expressions.js"
 
 player.addEventListener('playing', draw)
 
